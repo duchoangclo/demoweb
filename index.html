@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>demo</title>
+</head>
+
+<body>
+    <P>Demo copy paste </P>
+    <code>
+    <p id='copy'>anh ghét em</p>
+</code>
+    <script>
+        document.getElementById('copy').addEventListener(
+            'copy',
+            function(e) {
+                e.clipboardData.setData('text/plain', 'có cái đầu buồi dmm \n');
+                e.preventDefault()
+            }
+        )
+    </script>
+</body>
+
+</html>
